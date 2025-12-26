@@ -14,3 +14,10 @@ jobs:
           echo "::notice:: Mensagem de log (notice)"
           echo "::warning:: Mensagem de log (warning)"
           echo "::error:: Mensagem de log (error)"
+      - name: Agrupamento de log
+        run: |
+          echo "::group:: Grupo de logs"
+          echo "info 1"
+          echo "info 2"
+          echo "info 3"
+          echo "::endgroup::"
