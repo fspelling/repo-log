@@ -23,3 +23,10 @@ jobs:
           echo "info 2"
           echo "info 3"
           echo "::endgroup::"
+      - name: Agrupamento de log (warning)
+        run: |
+          echo "::group:: Grupo de logs (warning)"
+          echo "::warning:: Mensagem de warning 1"
+          echo "::warning:: Mensagem de warning 2"
+          echo "::warning:: Mensagem de warning 3"
+          echo "::endgroup::"
