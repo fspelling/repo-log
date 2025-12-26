@@ -1,0 +1,14 @@
+name: "Exemplo Logs"
+run-name: "Pipeline (Exemplo Logs) executado por ${{github.actor}}"
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Adicionando mensagens de log
+        run: |
+          echo "::debug:: Mensagem de log (debug)"
+          echo "::notice:: Mensagem de log (notice)"
+          echo "::warning:: Mensagem de log (warning)"
+          echo "::error:: Mensagem de log (error)"
