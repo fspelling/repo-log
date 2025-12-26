@@ -18,6 +18,8 @@ jobs:
         run: |
           echo "::group:: Grupo de logs"
           echo "info 1"
+          echo "::warning:: Mensagem de log 1(warning)"
+          echo "::warning:: Mensagem de log 2(warning)"
           echo "info 2"
           echo "info 3"
           echo "::endgroup::"
