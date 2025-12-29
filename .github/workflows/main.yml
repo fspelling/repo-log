@@ -2,6 +2,8 @@ name: "Exemplo Logs"
 run-name: "Pipeline (Exemplo Logs) executado por ${{github.actor}}"
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
 jobs:
   build:
     runs-on: ubuntu-latest
