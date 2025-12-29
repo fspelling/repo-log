@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Adicionando mensagens de log
         run: |
-          echoo "::debug:: Mensagem de log (debug1)"
+          echo "::debug:: Mensagem de log (debug1)"
           echo "::debug:: Mensagem de log (debug2)"
           echo "::debug:: Mensagem de log (debug3)"
           echo "::notice:: Mensagem de log (notice)"
